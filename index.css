@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 25%;
+ /*  background-attachment: fixed; */
+  
+  width: 550px;
+  height: 208px;
+
+}
+
+/* @media(min-width:551px) {
+ .header {
+  background-image: url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 25%;
+  min-width: 550px;
+  min-height: 209px;
+ }
+
+}
+ */
