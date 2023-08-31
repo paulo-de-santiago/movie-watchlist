@@ -1,18 +1,51 @@
 html, body {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
-.header {
+div.container {
+  width: 550px;
+  height: 100vh;
+}
+
+div.container,
+div.header,
+div.main {
+  display: flex;
+}
+
+div.container, 
+div.main {
+  flex-direction: column;
+}
+
+
+div.header {
+  /* Layout */
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
   background-image: url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 25%;
  /*  background-attachment: fixed; */
-  
-  width: 550px;
-  height: 208px;
 
+
+ padding-top: 82px;
+ padding-bottom: 78px;
+
+
+}
+
+div.main {
+  height: 400px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* @media(min-width:551px) {
