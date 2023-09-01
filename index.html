@@ -23,15 +23,20 @@
           onclick="location.href='watchlist.html'"
           type="button"
         >
-          My watchlist
+          My Watchlist
         </button>
-        <div class="search-form">
+        <!-- Search bar -->
+        <div class="search-form-out">
           <form action="/index.html" class="search-film" id="search-film">
-            <img src="images/Search.svg" alt="" />
-            <input type="text" placeholder="Search for a movie" />
-            <button type="submit" form="search-film">
-              <img src="images/Sort ascending.png" alt="" />Search
-            </button>
+            <div class="search-form-inner">
+              <div class="search-field">
+                <img src="images/Search.svg" alt="" />
+                <input type="text" placeholder="Search for a movie" />
+              </div>
+              <button class="search-film" type="submit" form="search-film">
+                <img src="images/Sort ascending.png" alt="" />Search
+              </button>
+            </div>
           </form>
         </div>
       </div>
