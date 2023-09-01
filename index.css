@@ -143,7 +143,8 @@ div.header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
+  /* To Do */
+/*   background-color: lightgray 0px -158.291px / 100% 423.007%; */
   background-image: url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,6 +190,14 @@ div.main {
   align-items: center;
 }
 
+div.my-watchlist-main {
+  display: flex;
+ justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
 .head-mini-text {
   color: var(--color-list-empty)
 }
