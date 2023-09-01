@@ -13,7 +13,7 @@ html {
 }
 
 :root{
-  /* Typography */
+  /* Typography Colors */
 
   /* Titles */
   --color-title: #FFF;
@@ -26,6 +26,14 @@ html {
   --color-list-features: #111827;
   --color-list-text: #6B7280;
   --color-list-read: #272727;
+
+   /* Typography Sizes */
+   --font-size-small: 0.75rem; /* 12px */
+   --font-size-medium: 0.875rem; /* 14px */
+   --font-size-normal: 1.125rem; /* 18px */
+   --font-size-large: 2.675rem; /* 42.795px */
+
+
 
 }
 
