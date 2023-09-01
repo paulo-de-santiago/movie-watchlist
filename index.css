@@ -55,6 +55,7 @@ h1 {
   font-size: var(--font-size-large);
   font-weight: var(--font-eight);
   line-height: var(--line-forty);
+
 }
 
 /* Buttons */
@@ -73,8 +74,8 @@ button.button-watchlist:hover  {
 }
 
 button.search-film:hover {
-  color:  #3c3636;
-  background:  rgba(255, 255, 255, 0.2);
+  color:  #e1d8d8;
+  background:   #f2eeee;
 
 }
 
@@ -164,7 +165,7 @@ div.search-form-out {
   gap: 8px;
   flex: 1 0 0;
   position: absolute;
-  top: 243px;
+  top: 192px;
 }
 
 div.search-field {
