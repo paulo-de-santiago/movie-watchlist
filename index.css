@@ -50,12 +50,28 @@ html {
 
 }
 
+/* h1 h2 */
+
 h1 {
   color: var(--color-title);
   font-size: var(--font-size-large);
   font-weight: var(--font-eight);
   line-height: var(--line-forty);
+}
 
+h2 {
+  color: var(--color-list-title);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-five)
+}
+
+/* p */
+
+p,
+div > .btn-list {
+  color: var(--color-list-features); 
+  font-size: var(--font-size-small);
+  font-weight: var(--font-four);
 }
 
 /* Buttons */
@@ -201,6 +217,104 @@ a {
 .head-mini-text {
   color: var(--color-list-empty)
 }
+
+
+/* Film List */
+
+div.film-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.all-features {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 342px;
+  
+}
+
+div.img-wrapper {
+  width: 99px; 
+  height: 147.411px;
+}
+
+img.img-film {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%; 
+
+}
+
+.div-title,
+.div-info,
+.div-description {
+  display: flex;
+}
+
+.div-title {
+  justify-content: left;
+  align-content: center;
+  gap: 5px;
+}
+
+.div-info {
+  align-content: center;
+  gap: 10px;
+}
+
+.btn-list {
+  background-color: var(--color-title);
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+}
+
+
+
+ .btn-list:hover  {
+  color: var(--color-list-empty);
+  background:  rgba(255, 255, 255, 0.2);
+} 
+
+.btn-list:focus {
+  animation: blink 0.5s steps(1, end)/*  infinite */;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rate {
+  align-self: center;
+}
+
+.p-description {
+  width: 342px;
+  color: var(--color-list-text);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-four);
+  line-height: 20px; /* 142.857% */
+}
+
+
+
+
 
 /* @media(min-width:551px) {
  .header {
