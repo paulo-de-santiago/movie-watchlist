@@ -5,9 +5,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* iframe {
-  min-height: 300px;
-} */
+
 div.container {
   width: 550px;
   height: 100vh;
@@ -42,11 +40,18 @@ div.header {
  padding-top: 82px;
  padding-bottom: 78px;
 
+ position: relative;
+
 
 }
 
+div.search-form {
+  position: absolute;
+  top: 243px;
+}
+
 div.main {
-  height: 400px;
+  min-height: 400px;
   justify-content: center;
   align-items: center;
 }
