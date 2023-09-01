@@ -11,7 +11,21 @@
     <div class="container">
       <div class="header" id="header">
         <h1>Find Your Film</h1>
-        <button>My watchlist</button>
+
+        <button
+          class="button-watchlist"
+          onclick="location.href='watchlist.html'"
+          type="button"
+        >
+          My watchlist
+        </button>
+      </div>
+      <div class="search-container">
+        <form action="/index.html" class="search-film" id="search-film">
+          <img src="images/Search.svg" alt="" />
+          <input type="text" placeholder="Search for a movie" />
+          <button type="submit" form="search-film">Search</button>
+        </form>
       </div>
       <div class="main">
         <a class="film-list">
