@@ -10,12 +10,21 @@ let inputTitle = document.getElementById("input-title");
 console.log(btnSearch);
 console.log(inputTitle);
 
-btnSearch.addEventListener("click", function (e) {
-  /*  e.preventDefault(e); */
+btnSearch.addEventListener("click", async function (e) {
+  e.preventDefault(e);
   let title = inputTitle.value;
   console.log(title);
 
-  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=34c3217c`)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+  /* Here is your key: 34c3217c
+
+Please append it to all of your API requests,
+
+OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=34c3217c */
+
+  const response = fetch(`https://www.omdbapi.com/?t=${title}&apikey=34c3217c`);
+  const movie = (await response).json();
+  const titles = await movie;
+  console.log(titles);
+
+  /*  {Response: "False", Error: "Movie not found!"} */
 });
