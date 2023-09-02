@@ -27,13 +27,25 @@
         </button>
         <!-- Search bar -->
         <div class="search-form-out">
-          <form action="/index.html" class="search-film" id="search-film">
+          <form action="" class="search-film" id="search-film">
             <div class="search-form-inner">
               <div class="search-field">
                 <img src="images/Search.svg" alt="" />
-                <input type="text" placeholder="Search for a movie" />
+                <label for="search-film"></label>
+                <input
+                  type="text"
+                  placeholder="Search for a movie"
+                  id="search-film"
+                />
               </div>
-              <button class="search-film" type="submit" form="search-film">
+              <button
+                form="search-film"
+                name="search-film"
+                type="submit"
+                class="search-film-btn"
+                id="search-film-btn"
+                value="submit"
+              >
                 <img src="images/Sort ascending.png" alt="" />Search
               </button>
             </div>
@@ -91,6 +103,19 @@
         </a> -->
       </div>
     </div>
+
+    <form>
+      <!--   <img src="images/Search.svg" alt="" />
+      <label for="search"></label>
+      <input type="text" placeholder="Search for a movie" /> -->
+      <button type="submit" id="search" value="submit" form="search">
+        Search
+      </button>
+    </form>
+
+    <form>
+      <button type="submit" id="btn" value="submit_button">click me!</button>
+    </form>
 
     <script src="index.js" type="module"></script>
   </body>

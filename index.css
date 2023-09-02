@@ -76,7 +76,7 @@ div > .btn-list {
 
 /* Buttons */
 button.button-watchlist,
-button.search-film {
+button.search-film-btn {
   border-radius: 5%;
   padding: 8px;
   font-size: var(--font-four);
@@ -89,7 +89,7 @@ button.button-watchlist:hover  {
   background:  rgba(255, 255, 255, 0.2);
 }
 
-button.search-film:hover {
+button.search-film-btn:hover {
   color:  #e1d8d8;
   background:   #f2eeee;
 
@@ -109,7 +109,7 @@ button.button-watchlist {
   /* width: 114px; */
 }
 
-button.search-film {
+button.search-film-btn {
   /* Layout */
   color: var(--color-list-text);
   width: 120px;
@@ -155,7 +155,6 @@ div.main {
 
 div.header {
   /* Layout */
-
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -172,8 +171,6 @@ div.header {
  padding-bottom: 78px;
 
  position: relative;
-
-
 }
 
 div.search-form-out {
@@ -186,7 +183,6 @@ div.search-form-out {
 }
 
 div.search-field {
-
   /* Layout */
   display: flex;
   padding: 9px 13px;
