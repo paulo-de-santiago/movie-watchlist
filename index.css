@@ -223,6 +223,7 @@ a {
 
 div.film-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -239,6 +240,11 @@ div.all-features {
   
 }
 
+div.film-item {
+  display: flex;
+  flex-direction: row;
+}
+ 
 div.img-wrapper {
   min-width: 99px; 
   height: 147.411px;
