@@ -1,0 +1,42 @@
+for (let title in filmSearch) {
+    filmContainer.innerHTML += ` 
+
+     <!-- Image film -->
+     <div class="film-item" id="film-item">
+        <div class="img-wrapper">
+          <img class="img-film" src="${filmSearch[title].Poster}" alt="" /> 
+        </div>         
+
+<div class="all-features">
+
+  <div class="info-wrapper">
+    <!-- title -->
+    <div class="div-title">
+      <h2>${filmSearch[title].Title}</h2>  
+      <img src="images/icon_star.svg" alt="rate" /> 
+      <p class="rate">${film.imdbRating}</p> 
+    </div>
+    <!-- info -->
+    <div class="div-info">
+      <p>${filmSearch[title].Runtime}</p>   
+      <p>${filmSearch[title].Genre}</p> 
+      <button class="btn-list">
+        <img
+          class="btn-list"
+          src="images/icon_plus.svg"
+          alt=""
+        />Watchlist
+      </button>
+    </div>
+    <!-- Description -->
+    <div class="div-description">
+      <p class="p-description">  
+       ${filmSearch[title].Plot}
+      </p>
+    </div>
+
+    </div>
+
+`;
+    console.log(filmSearch[title].Title);
+  }

@@ -243,6 +243,7 @@ div.all-features {
 div.film-item {
   display: flex;
   flex-direction: row;
+
 }
  
 div.img-wrapper {
