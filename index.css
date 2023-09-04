@@ -174,7 +174,7 @@ div.header {
 }
 
 div.search-form-out {
-  padding: 9px 13px;
+  padding:0.563rem 0.813rem;  /* 9px 13px */
   align-items: center;
   gap: 8px;
   flex: 1 0 0;
@@ -185,7 +185,7 @@ div.search-form-out {
 div.search-field {
   /* Layout */
   display: flex;
-  padding: 9px 13px;
+  padding:0.563rem 0.813rem;
   align-items: center;
   gap: 8px;
   flex: 1 0 0;
@@ -197,9 +197,13 @@ div.search-field {
 }
 
 div.main {
-  min-height: 400px;
+  box-sizing: border-box;
+  width: 403.6px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 div.my-watchlist-main {
@@ -231,12 +235,12 @@ p {
 div.all-features {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 342px;
+/*   width: 342px; */
   
 }
 
 div.img-wrapper {
-  width: 99px; 
+  min-width: 99px; 
   height: 147.411px;
 }
 
@@ -301,7 +305,7 @@ img.img-film {
 }
 
 .p-description {
-  width: 342px;
+  width: 290px;
   color: var(--color-list-text);
   font-size: var(--font-size-medium);
   font-weight: var(--font-four);
